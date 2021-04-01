@@ -18,7 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,9 +31,27 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <table class="styled-table">
+        <thead>
+            <tr>
+                <th id="thTime">Time</th>
+                <th id="thSched">Scheduled Activities</th>
+                <th id="thAdd">Add New</th>
+                <th id="thDelete">Delete</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+
+        </tbody>
+    </table>
     </div>
+
+    <form class="popup-form">
+      DISPLAY ON CLICK TO ENTER NEW COMMITMENT
+    </form>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
