@@ -114,6 +114,15 @@ function deleteEvent(clicked){
 
     targetElement = clicked.parentElement.previousElementSibling.previousElementSibling;
     targetElement.innerHTML = "";
+
+    arrayIndex = timeArr.indexOf(rowID.toString())
+    const newEvent = scheduled[arrayIndex]
+    newEvent.short = "";
+    newEvent.long = "";
+    newEvent.location = "";
+    newEvent.isfilled = false;
+    localStorage.setItem("scheduled",JSON.stringify(scheduled));
+
 }
 
 function checkPastTime(time,target) {
