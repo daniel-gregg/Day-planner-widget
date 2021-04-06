@@ -22,4 +22,5 @@ Project is created with:
 * To save a new event click on the '+' button for that time period and add relevent details
 * To delete an event click on the 🗑️ button for that time period
 
-
+## Screenshot
+![image](https://user-images.githubusercontent.com/37359711/113688742-c2489000-9708-11eb-9f41-a325255e209d.png)
