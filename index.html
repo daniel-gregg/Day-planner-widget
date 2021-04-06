@@ -27,7 +27,7 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead">ADD CURRENT DAY HERE</p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
@@ -46,10 +46,25 @@
     </table>
     </div>
 
-    <form class="popup-form">
-      DISPLAY ON CLICK TO ENTER NEW COMMITMENT
-    </form>
-
+    <div class="form-style-2" id="popup-form">
+      <div class="form-style-2-heading">Event information</div>
+      <form id="eventForm">
+        <label for="short-title">
+          <span>Short title<span class="required">*</span></span>
+          <input type="text" class="input-field" name="short-title" value="" id="short-title"/>
+        </label>
+        <label for="location">
+          <span>Location<span class="required">*</span></span>
+          <input type="text" class="input-field" name="location" value="" id="location"/>
+        </label>
+        <label for="details">
+          <span>Details<span class="required">*</span></span>
+          <textarea name="details" class="textarea-field"  id="details"></textarea>
+        </label>
+        <label><span> </span><input type="submit" value="Submit" /></label>
+      </form>
+    </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
     <script src="assets/script.js"></script>
