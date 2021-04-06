@@ -37,6 +37,7 @@ function onStart(event) {
         table.innerHTML += tableRow
     } 
     renderPastTime();
+    renderDay();
 }
 
 function startInterval(){
@@ -77,6 +78,11 @@ function renderPastTime(){
             row.style.backgroundColor = "grey";
         }
     }
+}
+
+function renderDay() {
+    var time = dayjs().format("dddd DD MMM HHMM");
+    document.getElementById("currentDay").innerHTML = time;
 }
 
 window.onload = onStart();
